@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+html {font-size:10px;}
+body {font-size:16px; background: #f9f9f9; font-family: 'Noto Sans KR', sans-serif;}
+
+.container {width:1200px; margin: 0 auto;}
+
+header {margin-bottom:25px; padding:25px 0px; border-bottom:1px solid #ccc;}
+header .logo {text-align: center;}
+header .logo h1 {font-size:3.5rem; font-weight:900; color:#333;}
+header .header_bottom {display:flex; flex-wrap:wrap; justify-content: space-between; align-items: center;}
+.header_bottom .select_dogs select {font-size: 1.6rem; padding:10px; border-radius: 5px; font-weight:400; border:1px solid #ccc;}
+.header_bottom .search_box input {font-size: 1.6rem; padding:10px; border-radius: 5px; border:1px solid #ccc; background: url(/img/search_icon.png) no-repeat #fff center right 10px / 15px;}
+
+.content {margin-bottom:25px;}
+
+#dogsList {display:flex; flex-wrap:wrap;}
+.item {width:25%; box-sizing: border-box; padding:5px; height:40rem; }
+.item .img {background-size:cover; background-position: center; background-repeat: no-repeat; width:100%; height:100%; border-radius: 15px; overflow: hidden; border: 1px solid #ededed;}
+.error_massage {width:100%; background: rgb(236, 119, 119); border-radius: 10px; color:#fff; font-weight:400; text-align: center; padding: 25px 0px;}
+.error_massage p {font-size:2rem;}
+
+@media screen and (max-width: 1200px) {
+
+    html {font-size: 8px;}
+
+    .container {width:95%; margin: 0 auto;}
+
+    .item {width:33.3%;}
+
+}
+
+@media screen and (max-width: 1000px) {
+    html {font-size: 6px;}
+    .item {width:50%; height: 80rem;}
+}
+
+
+@media screen and (max-width: 768px) {
+    header .header_bottom {flex-direction: column;}
+    header .logo h1 {padding:20px 0px;}
+    .item {height:60rem;}
+}
+
+@media screen and (max-width: 400px) {
+    .item {width:100%;}
+}
